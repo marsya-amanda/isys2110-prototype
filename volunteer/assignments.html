@@ -5,16 +5,126 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="nav-bar">
+    <root class="root">
+        <nav class="nav-bar">
         <div>
             <ul>
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="assignments.html"><b>Assignments</b></a></li>
-                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="availability.html">My Availability</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
                 <li><a href="">Settings</a></li>
                 <li><a href="../index.html">Logout</a></li>
             </ul>
         </div>
     </nav>
+
+    <content class="content">
+        <h1>Assignments</h1>
+
+        <div style="display:flex; justify-content:center; width: 80vw">
+            <text><b style="font-size: 18px">For the week:</b></text><select name="week-options" id="week-options">
+                <option>18/05/26 - 24/05/26</option>
+                <option>25/05/26 - 01/06/26</option>
+                <option>02/06/26 - 09/06/26</option>
+                <option>10/06/26 - 17/06/26</option>
+                <option>17/06/26 - 24/06/26</option>
+            </select>
+        </div>
+        <dash-container class="dash-container">
+            <day-cards class="day-cards">
+                <h3>Mon, 18/05</h3>
+                
+                <assignment-block class="assignment-block">
+                    <b>08:00AM - 10:00AM</b>
+                    Location: District A <br>
+                    Duration: 2 hours <br>
+                    Task: Meal delivery <br>
+                    Status: Completed
+                </assignment-block>
+
+                <assignment-block class="assignment-block">
+                    <b>12:00PM - 01:00PM</b>
+                    Location: District A <br>
+                    Duration: 1 hour <br>
+                    Task: Meal delivery <br>
+                    Status: Completed
+                </assignment-block>
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Tues, 19/05</h3>
+                
+                <assignment-block class="assignment-block">
+                    <i>No assignments!</i>
+                </assignment-block>
+
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Wed, 20/05</h3>
+                
+                <assignment-block class="assignment-block">
+                    <b>08:00AM - 12:00PM</b>
+                    Location: District A <br>
+                    Duration: 2 hours <br>
+                    Task: Meal delivery <br>
+                    Status: Pending
+                </assignment-block>
+
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Thurs, 21/05</h3>
+                
+                <assignment-block class="assignment-block">
+                    <b>08:00AM - 12:00PM</b>
+                    Location: District A <br>
+                    Duration: 2 hours <br>
+                    Task: Meal delivery <br>
+                    <t style="color: red">Status: Waiting Acceptance</t>
+                    <button>Accept Assignment</button>
+                </assignment-block>
+
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Fri, 22/05</h3>
+                
+                <assignment-block class="assignment-block">
+                    <b>08:00AM - 12:00PM</b>
+                    Location: District A <br>
+                    Duration: 2 hours <br>
+                    Task: Meal delivery <br>
+                    <t style="color: red">Status: Waiting Acceptance</t>
+                    <button>Accept Assignment</button>
+
+                    <b>01:00PM - 04:00PM</b>
+                    Location: District A <br>
+                    Duration: 3 hours <br>
+                    Task: Visit <br>
+                    <t style="color: red">Status: Waiting Acceptance</t>
+                    <button>Accept Assignment</button>
+                </assignment-block>
+
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Sat, 23/05</h3>
+                
+                <i>No assignments!</i>
+
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Sun, 24/05</h3>
+                <i>No assignments!</i>
+            </day-cards>
+
+            
+        </dash-container>
+    </content>
+    </root>
+    
 </body>
 </html>

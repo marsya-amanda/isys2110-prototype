@@ -5,16 +5,88 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <root class="root">
     <nav class="nav-bar">
         <div>
             <ul>
                 <li><a href="dashboard.html"><b>Dashboard</b></a></li>
                 <li><a href="assignments.html">Assignments</a></li>
-                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="availability.html">My Availability</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
                 <li><a href="">Settings</a></li>
                 <li><a href="../index.html">Logout</a></li>
             </ul>
         </div>
     </nav>
+
+    <content class="content">
+        <h1>Dashboard</h1>
+        <dash-container class="dash-container">
+            <div style="order:1; width: calc((100vw - 250px) * .62);">
+                <h2>Quick Actions</h2>
+                <cards class="cards">
+                    <c><b>Upcoming Assignment</b><br> 
+                        <i>Time</i>: 8:00AM - 10:00AM <br>
+                        <i>Date</i>: 19/05/26 (in 3 days) <br>
+                        <i>Location</i>: District A <br>
+                        <i>Status</i>: Accepted <br>
+                        <a href="assignments.html">See Upcoming Assignments</a>
+                    </c>
+                    <c><b>This Week's Availability</b><br>
+                        <i>Monday</i>: Full day |
+                        <i>Tuesday</i>: Morning <br>
+                        <i>Wednesday</i>: Morning |
+                        <i>Thursday</i>: Afternoon <br>
+                        <i>Friday</i>: Morning |
+                        <i>Saturday</i>: None <br>
+                        <i>Sunday</i>: None <br>
+                        <a href="availability.html">See My Availability</a>
+                    </c>
+                </cards>
+
+                <h2 style="margin-top:30px">Map View</h2>
+                <div style="width: 50vw; height: 30vh; border: 1px solid black; border-radius: 10px; margin: 0">
+                    <i style="color: grey; padding: 70px"> (map with location of volunteer and locations of upcoming assignments pinned)</i>
+                </div>
+            </div>
+
+            <div style="order:2; width: calc((100vw - 250px) * .3 - 50px); padding: 0px 20px; border: 1px solid black; margin-left: 20px; height: 52vh; border-radius: 10px">
+                <h2>My Volunteer Profile</h2>
+                
+                <h3 style="margin: 0">Personal Information</h3>
+                <div style="display: flex; flex-direction: row; align-items:center">
+                    <b>Full Name:</b> Lorem Ipsum <br>
+                    <button>edit</button>
+                </div>
+
+                <div style="display: flex; flex-direction: row">
+                    <b>Address:</b> Lorem Ipsum, District A
+                    <button>edit</button>
+                </div>
+
+
+                <h3 style="margin: 10px 0px 0px 0 ">Volunteering Statistics</h3>
+                <div style="display: flex; flex-direction: row">
+                    <b>Volunteering Duration:</b> 1 year and 4 months
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <b>Number of Completed Assignments:</b> 21
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <b>Number of Incomplete Assignments:</b> 1
+                </div>
+
+                <div style="display: flex; flex-direction: row">
+                    <b>Number of Pending Assignments:</b> 5
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <b>Volunteering Expertise:</b> Meal delivery
+                </div>
+                
+            </div>
+        </dash-container>
+        
+    </content>
+    </root>
 </body>
 </html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Volunteer Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <root class="root">
+    <nav class="nav-bar">
+        <div>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="availability.html"><b>My Availability</b></a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li><a href="">Settings</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <content class="content">
+        <h1>My Availability</h1>
+        <div style="display:flex; justify-content:center; width: 80vw">
+            <text><b style="font-size: 18px">For the week:</b></text><select name="week-options" id="week-options">
+                <option>18/05/26 - 24/05/26</option>
+                <option>25/05/26 - 01/06/26</option>
+                <option>02/06/26 - 09/06/26</option>
+                <option>10/06/26 - 17/06/26</option>
+                <option>17/06/26 - 24/06/26</option>
+            </select>
+        </div>
+        <dash-container class="dash-container">
+            <day-cards class="day-cards">
+                <h3>Monday</h3>
+                <label for="availability">Choose your availability:</label>
+                <select name="availability" id="availability">
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Full Day</option>
+                </select>
+
+                <h4 style="line-height: 0">Note:</h4>
+                <textarea id="text" rows="5" cols="12" style="width: 80%; height: 50%; margin-bottom: 10px"></textarea>
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Tuesday</h3>
+                <label for="availability">Choose your availability:</label>
+                <select name="availability" id="availability">
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Full Day</option>
+                </select>
+
+                <h4 style="line-height: 0">Note:</h4>
+                <textarea id="text" rows="5" cols="12" style="width: 80%; height: 50%; margin-bottom: 10px"></textarea>
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Wednesday</h3>
+                <label for="availability">Choose your availability:</label>
+                <select name="availability" id="availability">
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Full Day</option>
+                </select>
+
+                <h4 style="line-height: 0">Note:</h4>
+                <textarea id="text" rows="5" cols="12" style="width: 80%; height: 50%; margin-bottom: 10px"></textarea>
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Thursday</h3>
+                <label for="availability">Choose your availability:</label>
+                <select name="availability" id="availability">
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Full Day</option>
+                </select>
+
+                <h4 style="line-height: 0">Note:</h4>
+                <textarea id="text" rows="5" cols="12" style="width: 80%; height: 50%; margin-bottom: 10px"></textarea>
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Friday</h3>
+                <label for="availability">Choose your availability:</label>
+                <select name="availability" id="availability">
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Full Day</option>
+                </select>
+
+                <h4 style="line-height: 0">Note:</h4>
+                <textarea id="text" rows="5" cols="12" style="width: 80%; height: 50%; margin-bottom: 10px"></textarea>
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Saturday</h3>
+                <label for="availability">Choose your availability:</label>
+                <select name="availability" id="availability">
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Full Day</option>
+                </select>
+
+                <h4 style="line-height: 0">Note:</h4>
+                <textarea id="text" rows="5" cols="12" style="width: 80%; height: 50%; margin-bottom: 10px"></textarea>
+            </day-cards>
+
+            <day-cards class="day-cards">
+                <h3>Sunday</h3>
+                <label for="availability">Choose your availability:</label>
+                <select name="availability" id="availability">
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Full Day</option>
+                </select>
+
+                <h4 style="line-height: 0">Note:</h4>
+                <textarea id="text" rows="5" cols="12" style="width: 80%; height: 50%; margin-bottom: 10px"></textarea>
+            </day-cards>
+            
+        </dash-container>
+
+        <button style="margin: 10px; font-size: 18px; padding: 5px 5px; width: autos">Submit</button>
+    </content>
+
+    </root>
+</body>
+</html>
