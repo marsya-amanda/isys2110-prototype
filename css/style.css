@@ -148,7 +148,7 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 38vw;
     overflow-Y: auto;
 }
 
@@ -209,6 +209,7 @@
 
 .one-table {
     height: 70%;
+    width: 80vw;
     overflow-Y: auto;
     border: 1px solid black
 }
