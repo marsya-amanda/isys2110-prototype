@@ -33,10 +33,14 @@
 
 .content {
     padding: 10px 30px;
-    width: calc(100vw - 250px);
+    min-height: 100vh;
+    width: auto;
     display:flex;
     flex-direction:column;
     gap: 10px;
+    left: 258px;
+    position: absolute;
+    border-left: 1px solid black;
 }
 
 .content div {
@@ -49,10 +53,11 @@
 /* Navigation Bar*/
 .nav-bar {
     width: 250px;
-    height: 100vh;
-    border-right: 2px solid black;
+    height: auto;
+    border-right: 1px solid black;
     padding: 0;
     margin: 0;
+    position: absolute
 }
 
 .nav-bar ul {
@@ -225,7 +230,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 8px
+    gap: 8px;
 }
 
 .cards a {
@@ -240,4 +245,85 @@
     border-radius:10px;
     text-align: center;
     line-height: 150%
+}
+
+.cards c {
+    width: calc((100vw - 250px) * .33);
+    display: inline-block;
+    text-decoration: none;
+    word-break: normal;
+    overflow: hidden;
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius:10px;
+    text-align: center;
+    line-height: 150%;
+    align-content: center;
+    height: 100%;
+}
+
+.cards c a {
+    width: auto;
+    background-color: lightgrey;
+    font-size: 14px;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 4px 6px;
+    border-radius: 5px;
+    color: black;
+    margin-top: 4px
+}
+
+.cards c a:hover {
+    width: auto;
+    background-color: white;
+    font-size: 14px;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 4px 6px;
+    border-radius: 5px;
+    color: black;
+    margin-top: 4px
+}
+
+/* vertical containers */
+.day-cards {
+    width: calc(100%/7);
+    text-decoration: none;
+    word-break: normal;
+    overflow: auto;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 150%;
+    height: 65vh;
+    margin: 0 5px 0 5px;
+}
+
+.day-cards select {
+    font-size: 14px;
+    padding: 2px 2px 2px 2px;
+    margin: 10px;
+}
+
+.day-cards label {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px
+}
+
+.day-cards h3 {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background: white
+}
+
+.assignment-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px 10px;
+    font-size: 14px
 }
